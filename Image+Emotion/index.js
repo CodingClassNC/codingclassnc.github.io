@@ -2,8 +2,8 @@ prediction2 = "";
 prediction1 = "";
 
 Webcam.set({
-    width:250,
-    height:250,
+    width:450,
+    height:450,
     image_format:"png",
     png_quality: 90
 });
