@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotion To Emoji</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+</head>
+<body>
+    <div class="container">
+        <center>
+            <h3 class="btn btn-warning heading">Emotion Detector 😀😓😡</h3>
+            <p>Take your selfie for our system to predict your emotion!</p>
+            <p> Are you happy?  Are you sad? Or are you MAD?</p>
+            <label>Webcamview</label>
+            <div class="column-container">
+                <div id="camera" class="content-box"></div> <br>
+            </div><button>Capture Image</button>
+            <div> <br> <br>
+                <label>Prediction 1</label> 
+                <p id="resultemotionname"></p>
+                <p id="updateemoji"></p> 
+                <label>Prediction 2</label> 
+                <p id="resultemotionname2"></p>
+                <p id="updateemoji2"></p><br> <br> 
+            </div>
+            <label>Snapshot</label>
+            <div class="column-container">
+                <div id="result" class="content-box"> </div>
+            </div><button>Capture Image</button>
+        </center>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
