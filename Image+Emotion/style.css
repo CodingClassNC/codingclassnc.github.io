@@ -1,76 +1,92 @@
-html, body {
-    margin: 0;
-    padding: 0;
-}
-
 body {
     font-family: Arial, sans-serif;
-    font-size: 16px;
-}
-
-.container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.content-box {
-    padding: 20px;
-    width: 450px;;
-    margin: 0 auto;
-    height:450;
-    border: 2px solid #ccc;
-    border-radius: 10px;
-    background-color: #f9f9f9;
-}
-
-.heading {
-    font-size: 24px;
-    font-weight: bold;
-    margin: 10px 0;
+    background-color: #292929;
+    color: #fff;
     text-align: center;
 }
 
-.column-container {
+.container {
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.center {
+    text-align: center;
+}
+
+.heading {
+    color: #FF9800;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.emoji {
+    font-size: 24px;
+    margin-left: 5px;
+}
+
+.row-container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
 }
 
-.column {
-    width: calc(50% - 10px);
-    margin: 5px;
-    border: 1px solid #ccc;
-    max-width: 250px;
-    height: 250px;
+.webcam-view {
+    width: 250px;
+    text-align: center;
+    flex: 20%;
 }
 
-label {
-    font-weight: bold;
+.snapshot {
+    width: 250px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height:450px;
+    flex: 20%;
+    margin-right: 20px;
 }
 
-p {
-    margin: 5px 0;
+
+.content-box {
+    border: 2px solid #333;
+    border-radius: 10px;
+    height: 200px;
 }
 
-button {
+.capture-btn {
+    display: block;
+    width: 150px;
+    margin: 10px 0;
     padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
+    background-color: #FF9800;
+    color: #fff;
     border: none;
-    cursor: pointer;
-    font-size: 16px;
     border-radius: 5px;
-    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
 }
 
-#resultemotionname, #resultemotionname2 {
-    font-weight: bold;
-    font-size: 20px;
+
+.capture-btn:hover {
+    background-color: #F57C00;
 }
 
-#updateemoji, #updateemoji2 {
-    font-size: 36px;
-    margin: 5px 0;
+.predictions {
+    display: flex;
+    flex-direction: column;
+    flex: 20%;
+    justify-content: center;
+}
+
+.prediction-box {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.label, label {
+    text-align: center;
 }

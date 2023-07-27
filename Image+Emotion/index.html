@@ -13,25 +13,33 @@
 <body>
     <div class="container">
         <center>
-            <h3 class="btn btn-warning heading">Emotion Detector 😀😓😡</h3>
+            <h3 class="heading">Emotion Detector <span class="emoji">😀😓😡</span></h3>
             <p>Take your selfie for our system to predict your emotion!</p>
-            <p> Are you happy?  Are you sad? Or are you MAD?</p>
-            <label>Webcamview</label>
-            <div class="column-container">
-                <div id="camera" class="content-box"></div> <br>
-            </div><button>Capture Image</button>
-            <div> <br> <br>
-                <label>Prediction 1</label> 
-                <p id="resultemotionname"></p>
-                <p id="updateemoji"></p> 
-                <label>Prediction 2</label> 
-                <p id="resultemotionname2"></p>
-                <p id="updateemoji2"></p><br> <br> 
+            <p>Are you happy? Are you sad? Or are you MAD?</p>
+            <div class="row-container">
+                <div class="webcam-view">
+                    <label>Webcam View</label>
+                    <div id="camera" class="content-box"></div>
+                    <button class="capture-btn">Capture Image</button>
+                </div>
+                <div class="predictions">
+                    <div class="prediction-box">
+                        <label>Prediction 1</label>
+                        <p id="resultemotionname"></p>
+                        <p id="updateemoji"></p>
+                    </div> <br><br>
+                    <div class="prediction-box">
+                        <label>Prediction 2</label>
+                        <p id="resultemotionname2"></p>
+                        <p id="updateemoji2"></p>
+                    </div>
+                </div>
+                <div class="snapshot">
+                    <label>Snapshot</label>
+                    <div id="result" class="content-box"></div>
+                    <button class="capture-btn">Capture Image</button>
+                </div>
             </div>
-            <label>Snapshot</label>
-            <div class="column-container">
-                <div id="result" class="content-box"> </div>
-            </div><button>Capture Image</button>
         </center>
     </div>
     <script src="index.js"></script>
