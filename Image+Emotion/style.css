@@ -35,9 +35,9 @@ body {
 }
 
 .webcam-view {
-    width: 250px;
+    width: 450px;
     text-align: center;
-    flex: 20%;
+    flex: 1;
 }
 
 .snapshot {
@@ -45,16 +45,25 @@ body {
     text-align: center;
     justify-content: center;
     align-items: center;
-    height:450px;
-    flex: 20%;
+    height: 450px;
+    flex: 1;
     margin-right: 20px;
 }
-
 
 .content-box {
     border: 2px solid #333;
     border-radius: 10px;
-    height: 200px;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+    height:75%;
 }
 
 .capture-btn {
@@ -70,15 +79,14 @@ body {
     transition: background-color 0.2s ease;
 }
 
-
 .capture-btn:hover {
     background-color: #F57C00;
 }
 
 .predictions {
+    flex: 1;
     display: flex;
     flex-direction: column;
-    flex: 20%;
     justify-content: center;
 }
 
@@ -87,6 +95,7 @@ body {
     margin-bottom: 20px;
 }
 
-.label, label {
+.label,
+label {
     text-align: center;
 }

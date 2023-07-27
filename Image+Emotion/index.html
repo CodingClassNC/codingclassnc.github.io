@@ -17,10 +17,10 @@
             <p>Take your selfie for our system to predict your emotion!</p>
             <p>Are you happy? Are you sad? Or are you MAD?</p>
             <div class="row-container">
-                <div class="webcam-view">
+                <div class="webcam-view" style="width:50%; height:50%">
                     <label>Webcam View</label>
                     <div id="camera" class="content-box"></div>
-                    <button class="capture-btn">Capture Image</button>
+                    <button class="capture-btn" onclick="snapshot()">Capture Image</button>
                 </div>
                 <div class="predictions">
                     <div class="prediction-box">
@@ -34,10 +34,10 @@
                         <p id="updateemoji2"></p>
                     </div>
                 </div>
-                <div class="snapshot">
+                <div class="webcam-view" style="width:50%; height:50%">
                     <label>Snapshot</label>
                     <div id="result" class="content-box"></div>
-                    <button class="capture-btn">Capture Image</button>
+                    <button class="capture-btn" onclick="check()">Predict Emotion From Image</button>
                 </div>
             </div>
         </center>
