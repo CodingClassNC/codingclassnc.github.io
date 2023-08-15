@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Image Filter App</title>
+	<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div class="container">
+		<h3 class="title">Image Filter App</h3>
+		<input type="file" id="upload" accept="image/*">
+		<img id="imgdisplay" src="globe.png" >
+		<div class="editinputs">
+			<div class="input-group">
+				<span class="input-label">Brightness</span>
+				<input type="range" min="-100" max="100" id="brightness">
+			</div>
+			<div class="input-group">
+				<span class="input-label">Saturation</span>
+				<input type="range" min="-100" max="100" id="saturation">
+			</div>
+			<div class="input-group">
+				<span class="input-label">Grey Scale</span>
+				<input type="range" min="-100" max="100" id="grey">
+			</div>
+			<div class="input-group">
+				<span class="input-label">Hue</span>
+				<input type="range" min="-100" max="100" id="hue">
+			</div>
+			<div class="input-group">
+				<span class="input-label">Highlights</span>
+				<input type="range" min="-100" max="100" id="highlights">
+			</div>
+		</div>
+	</div>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>
