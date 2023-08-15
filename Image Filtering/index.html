@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+	<script src="script.js"></script>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div class="container">
+			<h3 class="btn btn-primary"> Image Filter App </h3>
+			<hr> <label>Filter Color</label>
+			<input id="colorname" placeholder="Enter Color For Filter" onblur="filter_tint()">
+			<br><br>
+			<br><br> 
+			<button class="btn btn-success" onclick="take_snapshot()">Take Snapshot</button>
+		<div id="canvas-container" class="canvas-container">
+    	</div>
+	</div>
+</body>
+</html>
