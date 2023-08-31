@@ -16,7 +16,7 @@ const artworks = [
 let currentartwork = null;
 
 function setup() {
-    createCanvas(windowWidth, windowHeight);
+    createCanvas(windowWidth/5, windowHeight/5);
     noLoop();
     const artworkContainer = select("#artworkcontainer"); 
     for (let i = 0; i < artworks.length; i++) {
@@ -32,7 +32,8 @@ function setup() {
 }
 
 function draw() {
-    background(63, 104, 224);
+    canvas.style.position = 'absolute';
+    canvas.style.top = '359px';
     if (currentartwork !== null) {
         currentartwork.display();
     }
