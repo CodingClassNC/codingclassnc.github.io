@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.progress {
+    height: 20px;
+    margin-bottom: 10px;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 18px;
+}
+
+.btn {
+    margin-top: 10px;
+}
+
+.progress-bar {
+    transition: width 0.3s ease-in-out;
+}
