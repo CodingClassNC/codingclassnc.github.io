@@ -15,10 +15,12 @@
         <div id="get-started" class="text-center">
             <p class="lead">Get Started</p>
             <input type="text" id="username-input" class="form-control mb-2" placeholder="Enter your username...">
+            <input type="text" id="profile-img-input" class="form-control mb-2" placeholder="Enter your profile image URL..."> <!-- Added profile image input field -->
             <button id="start-button" class="btn btn-primary">Start</button>
         </div>
         <div id="chat-container" class="mt-4" style="display: none;">
             <h2 class="mb-4">Username: <span id="display-username"></span></h2>
+            <img id="profile-img" class="profile-img" src="" alt=""> <!-- Added profile image display -->
             <div id="messages" class="bg-light p-3 rounded mb-3" style="max-height: 400px; overflow-y: auto;"></div>
             <div class="input-group">
                 <input type="text" id="message-input" class="form-control" placeholder="Type your message...">
