@@ -28,7 +28,6 @@ const firebaseConfig = {
           document.getElementById('get-started').style.display = 'none';
           displayUsername.textContent = username;
   
-          // Set the profile image
           if (profileImgUrl !== '') {
               profileImg.src = profileImgUrl;
               profileImg.alt = `Profile Image of ${username}`;
